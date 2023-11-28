@@ -9,9 +9,10 @@ header {
     background-color: #FFB366;
     color: white;
     text-align: left;
-    padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
     
 }
 
@@ -35,8 +36,18 @@ section {
     background-color: #FFB366;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animación de fadeIn */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #centro{
@@ -88,21 +99,113 @@ section {
     align-items: center;
 }
 
-.search-bar {
-    flex: 1; /* La barra de búsqueda ocupa el espacio restante */
-    margin-right: 10px;
-    
+.container .input{
+	border: 0;
+	outline: none;
+	color: #8b7d77;
 }
-.botonbusqueda{
+
+.container .input{
+    border: 0;
+    outline: none;
+    color: #8b7d77;
+}
+
+.search_wrap{
+    width: 150px;
+    margin: 38px auto;
+}
+
+.search_wrap .search_box{
+    position: relative;
+    width: 100%; /* Cambiado a 100% */
+    height: 40px;
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    display: flex; /* Agregado para alinear elementos en fila */
+}
+
+.search_wrap .search_box .input{
+    flex: 1; /* Hace que el input ocupe todo el espacio disponible */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: black;
+    background-color: #D3D3D3;
+}
+
+.search_wrap .search_box .btn{
+    width: 60px;
+    height: 100%;
+    background-color: #D3D3D3;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+    background: #708bd2;    
+}
+
+.search_wrap .search_box .btn.btn_common .fas{
+    position: absolute;
+    top: 50%;
+    left: 240px;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap_1 .search_box .btn{
+    margin-left:10px; /* Ajusta el espacio entre el input y el botón */
+}
+
+.botonheader2{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
     border-radius: 15px;
     background: linear-gradient(to bottom,#3CEE83,white);
     border: 0px;
     cursor: pointer;
+    margin-left: 140px;
 }
-.busquedabar{
-    width: 120px;
+
+.botones-header2{
+    display: flex;
+    align-items: center;
+}
+
+.botonheader3{
     height: 40px;
-    border-radius: 40px;
-    background-color: #D3D3D3;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
     border: 0px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.botones-header button,
+.botonheader2 {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #3CEE83, white);
+    border: 0px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.botones-header button:hover,
+.botonheader2:hover,
+.botonheader3:hover {
+    background: #3CEE83;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
