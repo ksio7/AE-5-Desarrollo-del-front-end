@@ -8,8 +8,11 @@ body {
 header {
     background-color: #FFB366;
     color: white;
-    text-align: center;
-    padding: 40px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
 }
 
 section {
@@ -25,7 +28,7 @@ section {
 }
 
 .cuadro-texto {
-    height: 500px;
+    height: 400px;
     width: 500px;
     box-sizing: border-box;
     padding: 20px;
@@ -42,4 +45,64 @@ section {
     justify-content: center;
     align-items: center;
 
+}
+
+.texto-destacado{
+    font-size: 20px;
+}
+
+.btn-cuestionario{
+    background-color: black;
+    color:white ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.botonheader{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#3CEE83,white);
+    border: 0px;
+    cursor: pointer;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.botones-header{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1; /* La barra de búsqueda ocupa el espacio restante */
+    margin-right: 10px;
+    
+}
+.botonbusqueda{
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#3CEE83,white);
+    border: 0px;
+    cursor: pointer;
+}
+.busquedabar{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #D3D3D3;
+    border: 0px;
 }
